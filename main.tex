@@ -118,7 +118,39 @@ git push origin develop
 
 \end{minipage}}
 
-Após concluir
+\vspace{0.3cm}
+
+Após concluir o relatório e fazer as cinco (5) alterações e commits necessários, foi criada uma release que foi publicada para motivos de arquivo:
+
+\vspace{0.3cm}
+
+\noindent\fbox{\begin{minipage}{\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax}
+\centering
+
+git flow release start Rel-1.0 develop
+
+git flow release publish Rel-1.0
+
+git flow release finish Rel-1.0 -m "v1" -k
+
+\end{minipage}}
+
+\vspace{0.3cm}
+
+Como foram denotados alguns erros no relatório, foram usados os comandos referentes às funções de hotfix para corrigir os mesmos:
+
+\vspace{0.3cm}
+
+\noindent\fbox{\begin{minipage}{\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax}
+\centering
+
+git flow hotfix start Rel-1.1 develop
+
+git flow hotifx publish Rel-1.1
+
+git flow hotfix finish Rel-1.1 -k
+
+\end{minipage}}
 
 \section{Ferramentas e Tecnologias}
 Para realizar este projeto usufrui das seguintes ferramentas:
