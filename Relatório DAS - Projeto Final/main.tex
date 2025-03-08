@@ -120,7 +120,7 @@ git push origin develop
 
 \vspace{0.3cm}
 
-Após concluir o relatório e fazer as cinco (5) alterações e commits necessários, foi criada uma release que foi publicada para motivos de arquivo:
+Após concluir o relatório e fazer as cinco (5) alterações e commits necessários, foi criada uma release:
 
 \vspace{0.3cm}
 
@@ -129,9 +129,9 @@ Após concluir o relatório e fazer as cinco (5) alterações e commits necessá
 
 git flow release start Rel-1.0 develop
 
-git flow release publish Rel-1.0
+git flow release finish Rel-1.0 -m "v1"
 
-git flow release finish Rel-1.0 -m "v1" -k
+git push origin main --tags
 
 \end{minipage}}
 
@@ -146,11 +146,13 @@ Como foram denotados alguns erros no relatório, foram usados os comandos refere
 
 git flow hotfix start Rel-1.1 develop
 
-git flow hotifx publish Rel-1.1
+git flow hotfix finish Rel-1.1
 
-git flow hotfix finish Rel-1.1 -k
+git push origin main
 
 \end{minipage}}
+
+\newpage
 
 \section{Ferramentas e Tecnologias}
 Para realizar este projeto usufrui das seguintes ferramentas:
@@ -173,6 +175,8 @@ Este foi projetado para tornar o processo de escrita e criação de relatórios 
 O Overleaf permite ainda a utilização de gestores bibliográficos para a inserção de citações e referências bibliográficas, sendo alguns exemplos deste tipo de ferramentas o Zotero e o Mendeley.
 
 No âmbito deste projeto, utilizei o Overleaf para me permitir escrever este relatório.
+
+\newpage
 
 \subsection{Git}
     \includegraphics[width=0.35\textwidth]{git.png} % Trocar imagem com logo do Git
@@ -210,6 +214,8 @@ O GitHub é mundialmente usado e chega a ter mais de 36 milhões de utilizadores
 
 No âmbito deste projeto, usamos o Github para controlar as versões atuais do projeto, podermos colaborar remotamente e corrigir erros sem haver necessidade de processos complexos e demorados.
 
+\newpage
+
 \subsection{GIMP}
     \includegraphics[width=0.3\textwidth]{gimp.png} % Trocar imagem com logo do GIMP
     \vspace{0.5cm}
@@ -221,6 +227,8 @@ O GIMP foi criado por estudantes como uma alternativa livre e gratuita ao Adobe 
 O GIMP foi criado para a criação ou manipulação de imagens e fotografias, podendo também criar gráficos, logótipos, redimensionar fotos, alterar cores, combinar imagens utilizando camadas, remover partes indesejadas e converter arquivos entre diferentes formatos de imagem digital.
 
 No âmbito deste projeto, utilizei o GIMP para redimensionar e alterar algumas imagens.
+
+\newpage
 
 \section{Webografia}
 \begin{itemize}
@@ -240,6 +248,10 @@ No âmbito deste projeto, utilizei o GIMP para redimensionar e alterar algumas i
 
 \section{Considerações Finais}
 
-Conclusão
+A implementação deste repositório demonstrou o passo a passo de como o fizemos através do modelo GitFlow, garantindo um fluxo de trabalho mais seguro e eficiente.
+
+Além disso, o controle de versões aplicado permitiu-nos manter um histórico detalhado das alterações realizadas, facilitando futuras manutenções e melhorias. 
+
+Por fim, a realização deste projeto final, permitiu-nos melhorar ainda mais asa nossas competências e familiaridade com o Git e o modelo GitFlow.
 
 \end{document}
