@@ -52,7 +52,7 @@ O objetivo deste projeto é criar um repositório no GitHub, usando o GitFlow, n
 Aníbal Freire
 \begin{itemize}
     \item Criação do Github
-    \item Criação do relatório
+    \item Criação do relatórii
 \end{itemize}
 \vspace{0.2cm}
 
@@ -60,7 +60,7 @@ Aníbal Freire
 Diogo Lima
 \begin{itemize}
     \item Auxílio com pesquisa
-    \item Realização de testes das permissões do Github
+    \item Realizaçºão de testes das permissões do Githab
 \end{itemize}
 \vspace{0.2cm}
 
@@ -73,14 +73,52 @@ Diogo Lima
 
 Para a criação do repositório local e uso do git flow para a manipulação e gestão deste foram usados os seguintes comandos em git bash:
 
+\vspace{0.3cm}
+
+\noindent\fbox{\begin{minipage}{\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax}
+\centering
+
 git clone https://github.com/zewo2/das-final
+
 cd das-final
+
 git flow init
 
+\end{minipage}}
+
+\vspace{0.3cm}
 
 Depois, para a subsequente manipulação do repositório remoto, upload das alterações e controlo de versão foram usados os seguintes comandos:
 
-git remote .......
+\vspace{0.3cm}
+
+\noindent\fbox{\begin{minipage}{\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax}
+\centering
+
+git remote add origin https://github.com/zewo2/das-final
+
+\end{minipage}}
+
+\vspace{0.3cm}
+
+Após a adição da origem remota, foi realizada a base inicial do relatório e colocada no repositório local, sendo estas alterações depois enviadas para o remoto:
+
+\vspace{0.3cm}
+
+\noindent\fbox{\begin{minipage}{\dimexpr\textwidth-2\fboxsep-2\fboxrule\relax}
+\centering
+
+git status
+
+git add .
+
+git commit -m "mensagem de commit"
+
+git push origin develop
+
+\end{minipage}}
+
+Após concluir
 
 \section{Ferramentas e Tecnologias}
 Para realizar este projeto usufrui das seguintes ferramentas:
